@@ -1,10 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Cafe The Cogan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe The Cogan — Ternate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6F4E37, #A67B5B);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        nav {
+            background: #333;
+            position: sticky;
+            top: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        nav a:hover {
+            background: #6F4E37;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            color: #6F4E37;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        .about-img {
+            width: 100%;
+            height: 250px;
+            background: #ddd;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .menu-item h3 {
+            color: #6F4E37;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-weight: bold;
+            color: #A67B5B;
+            font-size: 1.1rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 150px;
+            background: #ddd;
+            border-radius: 8px;
+        }
+        .contact-info {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            line-height: 2;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Selamat Datang di Cafe The Cogan!</h1>
-    <p>Kafe terbaik di Kota Ternate 📍</p>
+
+<header>
+    <h1>☕ Cafe The Cogan</h1>
+    <p>Tempat terbaik untuk berkumpul di Kota Ternate</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p style="text-align: center; font-size: 1.1rem;">Nikmati kopi terbaik dan suasana nyaman hanya di Cafe The Cogan, jantung Kota Ternate.</p>
+    <div class="about-img">📸 Gambar Depan Kafe</div>
+</section>
+
+<section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p><strong>Cafe The Cogan</strong> adalah kafe yang berlokasi di jantung Kota Ternate, Maluku Utara. Kami menyajikan berbagai macam kopi lokal dan makanan ringan dengan suasana yang nyaman dan ramah.</p>
+    <br>
+    <p><strong>Jam Buka:</strong> Senin–Minggu, 08.00 — 22.00 WITA</p>
+    <div class="about-img">📸 Suasana Dalam Kafe</div>
+</section>
+
+<section id="menu">
+    <h2>Daftar Menu</h2>
+    <div class="menu-grid">
+        <div class="menu-item">
+            <h3>Kopi Hitam</h3>
+            <p>Kopi murni tanpa gula</p>
+            <p class="price">Rp 15.000</p>
+        </div>
+        <div class="menu-item">
+            <h3>Kopi Susu</h3>
+            <p>Kopi dengan susu segar</p>
+            <p class="price">Rp 20.000</p>
+        </div>
+        <div class="menu-item">
+            <h3>Teh Manis</h3>
+            <p>Teh pilihan dengan gula</p>
+            <p class="price">Rp 10.000</p>
+        </div>
+        <div class="menu-item">
+            <h3>Roti Bakar</h3>
+            <p>Roti dengan selai coklat/keju</p>
+            <p class="price">Rp 18.000</p>
+        </div>
+        <div class="menu-item">
+            <h3>Jus Buah</h3>
+            <p>Jus buah segar pilihan</p>
+            <p class="price">Rp 15.000</p>
+        </div>
+        <div class="menu-item">
+            <h3>Mie Goreng</h3>
+            <p>Mie goreng spesial</p>
+            <p class="price">Rp 25.000</p>
+        </div>
+    </div>
+</section>
+
+<section id="galeri">
+    <h2>Galeri Kafe</h2>
+    <div class="gallery-grid">
+        <div class="gallery-img">📸 Foto 1</div>
+        <div class="gallery-img">📸 Foto 2</div>
+        <div class="gallery-img">📸 Foto 3</div>
+        <div class="gallery-img">📸 Foto 4</div>
+    </div>
+</section>
+
+<section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <div class="contact-info">
+        <p><strong>📍 Alamat:</strong> Jl. Salah Satu No. 123, Kota Ternate, Maluku Utara</p>
+        <p><strong>📞 Telepon/WA:</strong> 0812-xxxx-xxxx</p>
+        <p><strong>✉️ Email:</strong> cafethecogan@gmail.com</p>
+        <p><strong>🕐 Jam Operasional:</strong> Setiap Hari, 08.00 — 22.00 WITA</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Cafe The Cogan — Kota Ternate. Semua Hak Dilindungi.</p>
+</footer>
+
 </body>
 </html>
